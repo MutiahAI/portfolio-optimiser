@@ -1,0 +1,35 @@
+# Python Virtual Environments
+# Ignores local isolated environments and packages downloaded by pip.
+# Keeps repo small and lets developers use their own OS/Python versions.
+.venv/
+
+# Python Runtime Caches & Bytecode
+# Ignores temporary bytecode files (.pyc) compiled automatically when running code.
+__pycache__/
+
+# Security & Secret Keys
+# NEVER commit environment variable files! They contain API keys and passwords.
+.env
+
+# Local Data & Database Files
+# Ignores local data directories and DuckDB/SQLite database files.
+# Prevents giant datasets and constantly changing DB files from cluttering Git.
+data/
+*.duckdb
+
+
+# Machine Learning & Experiment Tracking
+# Ignores local experiment runs, parameters, and saved models (e.g., MLflow logs).
+mlruns/
+
+# Build, Distribution & Packaging Artifacts
+# Ignores output folders created when building, bundling, or installing Python packages.
+*.egg-info/
+
+
+# Developer Tools & IDE Settings
+# Ignores editor-specific files and linter/formatter caches.
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
